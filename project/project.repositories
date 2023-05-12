@@ -4,8 +4,24 @@
       <include>true</include>
       <metadata>
         <id>local</id>
-        <url>/opt/jboss/.m2/repository</url>
+        <url>/opt/jboss/maven/.m2/repository</url>
         <source>LOCAL</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>repository</id>
+        <url>/opt/jboss/maven/.m2/repository</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>redhat-ga-repository</id>
+        <url>http://maven.repository.redhat.com/ga/</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
@@ -14,6 +30,14 @@
         <id>central</id>
         <url>https://repo.maven.apache.org/maven2</url>
         <source>PROJECT</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-datagrid-repository</id>
+        <url>/opt/jboss/maven/.m2/repository/redhat-datagrid-8.3.1-maven-repository</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
   </repositories>
